@@ -5,7 +5,7 @@ environment:
   PYTHON_VERSION: 3.5
   PYTHON_ARCH: 32
   MSVC_VERSION: "Visual Studio 14"
-  LIB: C:/Program Files/Microsoft SDKs/Windows/v7.0/Include/
+  LIB: C:/Program Files/Microsoft SDKs/Windows/v8.0/Include/
 
 platform: x86
 
