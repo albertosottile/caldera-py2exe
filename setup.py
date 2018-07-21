@@ -35,10 +35,11 @@ else:
               ("_CRT_SECURE_NO_WARNINGS", '1'),]
 
 macros.append(("Py_BUILD_CORE", '1'))
-macros.append(("-IC", "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Include"))
 
 extra_compile_args = []
 extra_link_args = []
+
+extra_compile_args.append(("-IC:C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Include")
 
 if 0:
     # enable this to debug a release build
