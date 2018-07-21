@@ -40,6 +40,8 @@ extra_compile_args = []
 extra_link_args = []
 
 extra_compile_args.append("-IC:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Include")
+extra_compile_args.append("-IC:\\Program Files\\Windows Kits\\10\\Include\\10.0.10586.0\\km\\crt")
+extra_compile_args.append("-IC:\\Program Files\\Windows Kits\\10\\Include\\10.0.10586.0\\ucrt")
 
 if 0:
     # enable this to debug a release build
