@@ -25,7 +25,8 @@ install:
   - python setup.py bdist
   - python setup.py bdist_egg
   - python setup.py bdist_wheel
-  - dir
+  - pip install dist/py2exe-0.9.2.2-py33.py34.py35-none-any.whl
+  - python -c "import py2exe"
 
 # Not a project with an msbuild file, build done at install.
 build: off
