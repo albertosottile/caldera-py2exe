@@ -32,9 +32,10 @@ if _is_debug_build():
 else:
     macros = [("PYTHONDLL", '\\"python%d%d.dll\\"' % sys.version_info[:2]),
 ##              ("PYTHONCOM", '\\"pythoncom%d%d.dll\\"' % sys.version_info[:2]),
-              ("_CRT_SECURE_NO_WARNINGS", '1')]
+              ("_CRT_SECURE_NO_WARNINGS", '1'),]
 
 macros.append(("Py_BUILD_CORE", '1'))
+macros.append(("-IC", "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Include"))
 
 extra_compile_args = []
 extra_link_args = []
