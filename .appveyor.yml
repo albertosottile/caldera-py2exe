@@ -18,7 +18,7 @@ init:
   - python --version
   - python -m site
   - python -m pip install -U pip setuptools wheel
-  - dir "C:\Program Files\Microsoft SDKs\Windows"
+  - dir "C:\Program Files\Microsoft SDKs\Windows\v7.0\Include"
 
 install:
   - python setup.py bdist
