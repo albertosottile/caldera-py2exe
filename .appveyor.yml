@@ -5,7 +5,7 @@ environment:
   PYTHON_VERSION: 3.5
   PYTHON_ARCH: 32
   MSVC_VERSION: "Visual Studio 14"
-  INCLUDE: "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Include;C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\include;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.10586.0\\ucrt"
+  INCLUDE: "C:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\Include;C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\include;C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.10586.0\\ucrtC:\\Program Files\\Microsoft SDKs\\Windows\\v7.0\\lib"
 
 platform: x86
 
@@ -18,7 +18,7 @@ init:
   - python --version
   - python -m site
   - python -m pip install -U pip setuptools wheel
-  - dir "C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt"
+  #- dir "C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt"
 
 install:
   - python setup.py bdist
