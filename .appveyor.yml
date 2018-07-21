@@ -1,5 +1,5 @@
 environment:
-  PYTHON: "C:\\Python34"
+  PYTHON: "C:\\Python35"
   PYTHON_VERSION: 3.5
   PYTHON_ARCH: 32
 
@@ -26,7 +26,7 @@ build: off
 artifacts:
   - path: 'dist'
     type: zip
-    name: twisted-wheels
+    name: py2exe-py35
 
 # Push artefact to S3 bucket and list all
 before_deploy:
