@@ -1,3 +1,5 @@
+image: Visual Studio 2015
+
 environment:
   PYTHON: "C:\\Python35"
   PYTHON_VERSION: 3.5
@@ -18,7 +20,8 @@ init:
 install:
   - python setup.py bdist
   - python setup.py bdist_egg
-  - ls -al
+  - python setup.py bdist_wheel
+  - dir
 
 # Not a project with an msbuild file, build done at install.
 build: off
