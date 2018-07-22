@@ -22,8 +22,6 @@ init:
   #- dir "C:\Program Files (x86)\Windows Kits\10\Lib\10.0.10586.0\ucrt"
 
 install:
-  - python setup.py bdist
-  - python setup.py bdist_egg
   - python setup.py bdist_wheel
   - pip install dist/py2exe-0.9.2.2-py33.py34.py35-none-any.whl
   - python -c "import py2exe"
@@ -32,9 +30,8 @@ install:
 build: off
 
 artifacts:
-  - path: 'dist'
-    type: zip
-    name: py2exe-py35
+  - path: 'dist/py2exe-0.9.2.2-py33.py34.py35-none-any.whl'
+    name: py2exe-0.9.2.2-py33.py34.py35-none-any.whl
 
 # Push artefact to S3 bucket and list all
 before_deploy:
