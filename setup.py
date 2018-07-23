@@ -141,7 +141,7 @@ else:
         """
         def get_tag(self):
             impl_tag, abi_tag, plat_tag = super().get_tag()
-            return "py33.py34.py35.py36", abi_tag, plat_tag
+            return "py33.py34.py35.py36.py37", abi_tag, plat_tag
 
 
 if __name__ == "__main__":
@@ -177,6 +177,7 @@ if __name__ == "__main__":
               "Programming Language :: Python :: 3.4",
               "Programming Language :: Python :: 3.5",
               "Programming Language :: Python :: 3.6",
+              "Programming Language :: Python :: 3.7",
               "Programming Language :: Python :: Implementation :: CPython",
               "Topic :: Software Development",
               "Topic :: Software Development :: Libraries",
